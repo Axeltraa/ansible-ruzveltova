@@ -1,0 +1,7 @@
+---
+- name: test
+  hosts: local
+  remote_user: root
+  tasks:
+  - action: apt name=cowsay state=present update_cache=yes
+  
